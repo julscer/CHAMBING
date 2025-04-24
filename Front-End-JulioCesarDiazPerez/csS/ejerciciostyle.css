@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.top-bar {
+    background-color: #4B0082;
+    color: white;
+    padding: 5px 15px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    background-color: #2e7d32;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.navbar nav a,
+.navbar .user {
+    color: white;
+    margin-left: 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    padding: 15px 20px;
+    background-color: #f0f0f0;
+    color: #444;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.main-content h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.line {
+    height: 4px;
+    background-color: #2e7d32;
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.notice {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.comments-section {
+    border: 3px solid black;
+    margin: 30px 50px;
+    padding: 20px;
+    background-color: #fefefe;
+}
+
+.comments-section h3 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.comment {
+    margin-bottom: 15px;
+}
+
+.comment .user {
+    color: #2b7514;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.comment .comment-text {
+    color: #1a0dab;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.rating {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating .stars {
+    color: gold;
+    font-size: 18px;
+}

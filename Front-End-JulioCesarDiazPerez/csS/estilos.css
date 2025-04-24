@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f3f6fa;
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor {
+  display: flex;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #2e7d32;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.navbar nav a,
+.navbar .user {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.barra-lateral {
+  width: 250px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+}
+
+.foto-perfil {
+  width: 100px;
+  height: 100px;
+  background: url('../img/fs.jpg') center/cover no-repeat;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+}
+
+.barra-lateral h2 {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.barra-lateral button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.barra-lateral button:hover {
+  background: #218838;
+}
+
+.perfil-principal {
+  flex: 1;
+  padding: 20px;
+}
+
+.pestañas {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.pestañas button {
+  padding: 8px 12px;
+  border: none;
+  background: #e0e0e0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pestañas button.activa {
+  background: #28a745;
+  color: white;
+}
+
+.insignias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+.insignia {
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.insignia img {
+  max-width: 64px;
+  margin-bottom: 10px;
+}
+
+  
