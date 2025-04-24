@@ -1,0 +1,155 @@
+.barra-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 12vh;
+    background-color: rgb(65, 166, 87);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+    padding-left: 10vw;
+    box-sizing: border-box;
+}
+
+.contenedor-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 12vh;
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-combobox {
+    width: 10vw;
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para los enlaces en lugar de los selects */
+.contenedor-combobox a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgb(65, 166, 87);
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contenedor-combobox a:hover {
+    background-color: rgb(75, 180, 100);
+}
+
+.contenedor-Slogan {
+    padding-left: 2vw;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+/* El resto se mantiene igual */
+.contenedor-principal {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    position: relative;
+    margin-top: 12vh;
+    background-color: rgb(48, 49, 87);
+}
+
+.contenedor-imagenes-deslizantes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100vw * 3);
+    height: 60vh;
+    display: flex;
+    animation: desplazarMultiple 12s infinite alternate linear;
+    margin-left: -2vw;
+}
+
+.imagen-deslizante {
+    width: 100vw;
+    height: 60vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 2vw;
+    box-sizing: border-box;
+}
+
+@keyframes desplazarMultiple {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100vw * 2));
+    }
+}
+
+/* Estudiantes del Mes */
+.estudiantes-mes {
+    margin: 4vh auto 0;
+    text-align: center;
+}
+.estudiantes-mes h2 {
+    font-size: 2rem;
+    color: #414141;
+    margin-bottom: 2vh;
+}
+
+.lista-estudiantes {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+
+.estudiante-card {
+    width: 18vw;
+    max-height: 25vh;
+    background: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    padding: 1vh 1vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.foto-container {
+    width: 12vh;
+    height: 12vh;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    margin-bottom: 1vh;
+}
+
+.foto-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.estudiante-card .username {
+    margin: 0.5vh 0 0.5vh;
+    font-weight: bold;
+    color: #2d2d2d;
+}
+
+.estudiante-card .logro {
+    font-size: 0.9rem;
+    color: #555;
+    text-align: center;
+}
